@@ -1,0 +1,19 @@
+<ul class="nav justify-content-center">
+  {% if site.github_username%}
+    <li class="nav-item">
+      <a class="nav-link" href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <span class="username">{{ site.github_username| escape }}</span>
+      </a>
+    </li>
+  {% endif %}
+  {% if site.twitter_username%}
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <span class="username">{{ site.twitter_username| escape }}</span>
+      </a>
+    </li>
+  {% endif %}
+  {% if site.rss %}<li class="nav-item"><a class="nav-link" href="{{ 'feed.xml' | relative_url }}"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>{{ site.rss | escape }}</span></a></li>{% endif %}
+</ul>

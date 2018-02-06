@@ -1,0 +1,40 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@font-face {
+  font-family: 'Norse';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/norse/Norse.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Norse';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/assets/norse/Norse-Bold.otf') format("opentype");
+}
+
+@import "variables";
+@import "bootstrap/bootstrap";
+
+.jumbotron-fire{
+  background-color: $dark;
+  background-image: url('/assets/bonfire-sparks.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 500px;
+}
+.bg-textured{
+  background-image: url('/assets/dark_leather.png');
+  background-repeat: repeat;
+  background-color: $dark;
+}
+.font-display{
+  font-family: $font-family-display;
+}
+footer {
+  margin-top: 25px;
+}
